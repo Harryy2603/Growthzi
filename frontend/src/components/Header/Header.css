@@ -1,0 +1,245 @@
+body {
+    background-color: #ffffff; 
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .header {
+    width: 100%;
+    padding: 40px 0;
+    background-image: url('/Mask group.png');
+    background-size: cover;
+    background-position: center top -100px;
+    position: relative;
+    overflow: hidden;
+    animation: slideUpFadeIn 1.8s ease-out forwards; 
+  }
+  .header img{
+    height: 210px;
+  }
+  
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    z-index: 1;
+  }
+  
+  .header-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .header-container > * {
+    animation: popIn 1.2s ease forwards; 
+  }
+  
+  .header-tagline {
+    margin-bottom: 20px;
+  }
+  
+  .generate-text {
+    background-color: #f0e6ff;
+    color: #8a2be2;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+  }
+  
+  .header-title {
+    margin-bottom: 40px;
+  }
+  
+  .header-title h1 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #1a1a1a;
+    margin: 0;
+  }
+  
+  .ai-text {
+    color: #8a2be2;
+  }
+  
+  .form-container {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+    max-width: 550px;
+    box-shadow: 0 0 30px rgba(243, 188, 197, 0.7),   
+                10px 0 40px rgba(0, 123, 255, 0.5),  
+                -10px 0 40px rgba(255, 255, 0, 0.5); 
+
+
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .form-container::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    border-radius: 30px;
+    z-index: -1;
+    filter: blur(30px);
+  }
+  
+  .generate-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .form-field label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    font-weight: 500;
+    text-align: left;
+  }
+  
+  .form-field input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+    font-size: 14px;
+  }
+  
+  .form-field input:focus {
+    outline: none;
+    border: 2px solid #8a2be2;
+  }
+  
+  .generate-btn {
+    background-color: #a6ce39;
+    color: #333;
+    font-weight: 600;
+    padding: 12px;
+    border: none;
+    border-radius: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 8px;
+    transition: all 0.2s ease;
+  }
+  
+  .generate-btn:hover {
+    background-color: #95bb2d;
+  }
+  
+  .metrics-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .header::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url('');
+    background-repeat: repeat;
+    opacity: 0.3;
+    z-index: 1;
+  }
+  
+  .form-icons {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .icon-left, .icon-right {
+    font-size: 20px;
+    background: white;
+    border-radius: 50%;
+    padding: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  @keyframes slideUpFadeIn {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes popIn {
+    0% {
+      transform: scale(0.95);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .header-title h1 {
+      font-size: 36px;
+    }
+  
+    .metrics-container {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header-title h1 {
+      font-size: 28px;
+    }
+  
+    .form-container {
+      padding: 20px;
+    }
+  
+    .generate-text {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  }
+  
