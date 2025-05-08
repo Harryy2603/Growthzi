@@ -5,24 +5,24 @@ import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
 
 const faqData = [
   {
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+    question: "What is Growthzi AI Website Builder?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Growthzi's AI Website Builder makes creating websites simple. Choose templates, customize easily, and build a professional site without any technical know-how.",
   },
   {
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+    question: "How can you grow your business with Growthzi?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "You can grow your business with Growthzi by leveraging its AI-driven tools and solutions across various aspects of digital marketing. Growthzi helps you streamline processes, reach a wider audience, and optimize your marketing efforts for maximum impact and growth.",
   },
+  // {
+  //   question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+  //   answer:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  // },
   {
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+    question: "Is it difficult to start growing?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  },
-  {
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Our user-friendly tools and intuitive interfaces makes it easy for businesses of all sizes to get started and see results quickly. Whether you're new to digital marketing or an experienced professional, Growthzi provides the tools and support you need to start growing your business effectively.",
   },
 ];
 
