@@ -13,6 +13,7 @@ import onlineBusiness from './onlineBusiness.jpg'
 import female from './female.avif'
 import male from './male.avif'
 import google_icon from './google.png'
+import cross_icon from './cross_icon.png'
 
 export const assets = {
     Logo,
@@ -29,5 +30,6 @@ export const assets = {
     onlineBusiness,
     female,
     male,
-    google_icon
+    google_icon,
+    cross_icon
 }

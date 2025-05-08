@@ -21,7 +21,7 @@
   background: #ebe9e9;
   border-radius: 50%;
   left: 200px;
-  top: 50%;
+  top: 8%;
   transform: translateY(-50%);
   z-index: 0;
 }
@@ -34,7 +34,7 @@
   border-radius: 50%;
   color: white;
   left: 100px;
-  top: 50%;
+  top: 25%;
   transform: translateY(-50%);
   text-align: center;
   padding: 40px 20px;
