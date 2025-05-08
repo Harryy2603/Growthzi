@@ -27,35 +27,60 @@ const categories = [
   },
 ];
 
+const container = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.25,
+    },
+  },
+};
+
+const card = {
+  hidden: { opacity: 0, y: 80 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.7,
+      ease: [0.25, 1, 0.5, 1],
+    },
+  },
+};
+
 const BusinessCategories = () => {
   return (
-    <motion.section
-        className="business"
-        initial={{ opacity: 0, y: 80, scale: 0.95 }}
-        whileInView={{ opacity: 1, y: 0, scale: 1 }}
-        transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
-        viewport={{ once: true }}
-    >
-        <div className="business-container">
+    <section className="business">
+      <div className="business-container">
         <h2>
-            Tailored <span>Solutions</span> for <br /> Every Business
+          Tailored <span>Solutions</span> for <br /> Every Business
         </h2>
-        <div className="cards-wrapper">
-            {categories.map((item, index) => (
-            <div className="business-card" key={index}>
-                <img src={item.image} alt="category preview" className="card-image" />
-                {/* <img src={logoIcon} alt="icon" className="icon-overlay" /> */}
-                <div className="card-text">
+
+        <motion.div
+          className="cards-wrapper"
+          variants={container}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          {categories.map((item, index) => (
+            <motion.div
+              key={index}
+              className="business-card"
+              variants={card}
+            >
+              <img src={item.image} alt="category preview" className="card-image" />
+              <div className="card-text">
                 <h3>
-                    {item.titleLine1} <br /> <span>{item.titleLine2}</span>
+                  {item.titleLine1} <br /> <span>{item.titleLine2}</span>
                 </h3>
                 <p>{item.description}</p>
-                </div>
-            </div>
-            ))}
-        </div>
-        </div>
-    </motion.section>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
+    </section>
   );
 };
 

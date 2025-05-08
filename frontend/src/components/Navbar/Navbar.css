@@ -101,7 +101,6 @@ a, a:visited, a:focus, a:active {
     background-color: #95bb2d;
   }
   
-  /* Responsive styles */
   @media (max-width: 768px) {
     .navbar-links {
       display: none;

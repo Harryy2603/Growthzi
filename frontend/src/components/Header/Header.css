@@ -64,7 +64,7 @@ body {
   }
   
   .header-title h1 {
-    font-size: 50px;
+    font-size: 53px;
     font-weight: 600;
     line-height: 1.2;
     color: #1a1a1a;
@@ -159,10 +159,35 @@ body {
   }
   
   .metrics-container {
+    background: white;
+    padding: 2rem;
     display: flex;
     justify-content: center;
+    border-radius: 2rem;
+    box-shadow: 0 0 20px rgba(128, 0, 255, 0.4);
+    width: 80%;
+    margin: 2rem auto;
+  }
+  
+  .metrics-card {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .metric {
     text-align: center;
   }
+  
+  .metric h2 {
+    font-size: 2rem;
+    color: #1b005f;
+  }
+  
+  .metric p {
+    margin-top: 0.4rem;
+    color: #888;
+  }      
   
   .header::after {
     content: '';
@@ -193,6 +218,52 @@ body {
     padding: 6px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   }
+
+  .star-group {
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .star-group svg {
+    width: 100px;  
+    height: 100px;
+    stroke: #ddcaf0;
+    stroke-width: 1;
+    opacity: 0.6;
+    fill: none;
+    /* filter: drop-shadow(0 0 12px #d9bfff); */
+    position: absolute;
+  }
+  
+  .star-group.top-left {
+    top: 140px;
+    left: 120px;
+  }
+  
+  .star-group.bottom-right {
+    top: 450px;
+    right: 200px;
+  }
+  
+  .star-group svg:nth-child(1) {
+    top: 0;
+    left: 0;
+    transform: scale(1) rotate(0deg);
+  }
+  .star-group svg:nth-child(2) {
+    top: -50px;
+    left: 70px;
+    transform: scale(0.9) rotate(0deg);
+  }
+  .star-group svg:nth-child(3) {
+    top: 45px;
+    left: 70px;
+    transform: scale(0.8) rotate(-0deg);
+  }
+  
+
+  
   
   @keyframes slideUpFadeIn {
     from {
@@ -216,7 +287,6 @@ body {
     }
   }
   
-  /* Responsive */
   @media (max-width: 768px) {
     .header-title h1 {
       font-size: 36px;

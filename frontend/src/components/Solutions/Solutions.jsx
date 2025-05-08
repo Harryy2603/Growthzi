@@ -1,60 +1,89 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Solutions.css';
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import { assets } from '../../assets/assets';
 
 const cardData = [
   {
     title: 'Single Text Input',
     description: 'Describe your business in few simple words.',
-    icon: '🔍',
+    image: assets.preview,
   },
   {
     title: 'AI Powered Development',
     description: 'Let AI design and create fully functional website in minutes.',
-    icon: '⚡',
+    image: assets.scanner,
     highlight: true,
   },
   {
     title: 'Fully Customisable',
     description: 'Easily edit text, images, and design of generated website.',
-    icon: '⚙️',
+    image: assets.customisation,
   },
 ];
 
+const cardVariant = {
+  hidden: { opacity: 0, y: 60 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: 'easeOut',
+    },
+  },
+};
+
 const Solutions = () => {
+  const controlsArray = cardData.map(() => useAnimation());
+
+  useEffect(() => {
+    const animateSequentially = async () => {
+      for (let i = 0; i < controlsArray.length; i++) {
+        await controlsArray[i].start('visible');
+      }
+    };
+    animateSequentially();
+  }, []);
+
   return (
-    <motion.section
-      className="solution"
-      initial={{ opacity: 0, y: 80, scale: 0.95 }}
-      whileInView={{ opacity: 1, y: 0, scale: 1 }}
-      transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
-      viewport={{ once: true }}
-    >
-        <div className="solutions-container">
+    <section className="solution">
+      <div className="solutions-container">
         <div className="cards-section">
-            {cardData.map((card, index) => (
-            <div
-                className={`cards ${card.highlight ? 'highlight' : ''}`}
-                key={index}
+          {cardData.map((card, index) => (
+            <motion.div
+              className={`cards ${card.highlight ? 'highlight' : ''}`}
+              key={index}
+              initial="hidden"
+              animate={controlsArray[index]}
+              variants={cardVariant}
+              whileHover={{ scale: 1.05 }}
             >
-                <div className="icon">{card.icon}</div>
-                <h3>{card.title}</h3>
-                <p>{card.description}</p>
-            </div>
-            ))}
+              <div className="icon">
+                <img src={card.image} alt={card.title} />
+              </div>
+              <h3>{card.title}</h3>
+              <p>{card.description}</p>
+            </motion.div>
+          ))}
         </div>
 
         <div className="preview-section">
-            <h2>
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
+            viewport={{ once: true, amount: 0.4 }}
+          >
             Tailored <span>Solutions</span>
-            </h2>
-            <div className="browser-window">
-            <img src={assets.webPopup} alt="" />
-            </div>
+          </motion.h2>
+
+          <div className="browser-window">
+            <img src={assets.webPopup} alt="Website preview" />
+          </div>
         </div>
-        </div>
-    </motion.section>
+      </div>
+    </section>
   );
 };
 

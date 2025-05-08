@@ -1,3 +1,9 @@
+* {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+}
+
 .solutions-container {
   display: flex;
   justify-content: space-between;
@@ -32,8 +38,13 @@
 }
 
 .cards:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+  transform: scale(1.08);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.icon img {
+  width: 40px;
+  height: 35px;
 }
 
 .cards .icon {
@@ -79,6 +90,8 @@
   max-height: 480px;
   object-fit: contain;
 }
+
+/* Responsive Media Queries */
 @media (max-width: 1024px) {
   .solutions-container {
     flex-direction: column;
@@ -95,7 +108,7 @@
     margin-bottom: 2rem;
   }
 
-  .card {
+  .cards {
     width: 30%;
     min-width: 180px;
     padding: 1rem;
@@ -125,7 +138,7 @@
     gap: 1rem;
   }
 
-  .card {
+  .cards {
     width: 90%;
     padding: 0.8rem;
   }

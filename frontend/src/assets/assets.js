@@ -10,7 +10,9 @@ import customisation from './customisation.png'
 import brand from './brand.jpeg'
 import offlineBusiness from './offlineBusiness.jpg'
 import onlineBusiness from './onlineBusiness.jpg'
-
+import female from './female.avif'
+import male from './male.avif'
+import google_icon from './google.png'
 
 export const assets = {
     Logo,
@@ -24,5 +26,8 @@ export const assets = {
     customisation,
     brand,
     offlineBusiness,
-    onlineBusiness
+    onlineBusiness,
+    female,
+    male,
+    google_icon
 }
