@@ -2,8 +2,12 @@ import React from "react";
 import "./Header.css";
 import Typewriter from "typewriter-effect";
 import CountUp from "../CountUp/CountUp";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+
+  const navigate = useNavigate();
+
   return (
     <header className="header">
       <div className="star-group top-left">
@@ -68,7 +72,7 @@ const Header = () => {
               <label htmlFor="businessType">Type of Business*</label>
               <input type="text" id="businessType" required />
             </div>
-            <button className="generate-btn" type="submit">
+            <button onClick={()=> navigate("/generateWebsite")} className="generate-btn" type="submit">
               <span className="icon">✨</span> Generate
             </button>
           </form>
