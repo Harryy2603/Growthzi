@@ -65,8 +65,15 @@
 }
 
 .signup-prompt a {
-  color: #666;
+  color: #000;
   text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.signup-prompt a:hover{
+  color: #007BFF;
+  text-decoration-color: #007BFF;
 }
 
 .social-login {

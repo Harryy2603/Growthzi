@@ -23,8 +23,8 @@ const Navbar = ({setShowLogin,setShowSignup}) => {
         </div>
         
         <div className="navbar-buttons">
-          <button className="sign-in-btn" onClick={()=>setShowLogin(true)}>Sign In</button>
-          <button className="sign-up-btn" onClick={()=>setShowSignup(true)}>Sign Up</button>
+          {/* <button className="sign-in-btn" onClick={()=>setShowLogin(true)}>Sign In</button> */}
+          <button className="sign-up-btn" onClick={()=>setShowLogin(true)}>Sign In</button>
         </div>
       </div>
     </nav>
