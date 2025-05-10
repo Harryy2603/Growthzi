@@ -89,8 +89,17 @@
   background-position: center;
 }
 
-.google-icon {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><path fill="%234285F4" d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>');
+/* .google-icon {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 533.5 544.3'><path fill='%23EA4335' d='M533.5 278.4c0-18.4-1.5-36.1-4.3-53.3H272v100.9h146.9c-6.3 33.7-25.3 62.3-53.8 81.3l87 67.8c50.8-46.8 80.4-115.8 80.4-196.7z'/><path fill='%234285F4' d='M272 544.3c72.6 0 133.6-24.1 178.1-65.5l-87-67.8c-24.2 16.3-55 25.9-91.1 25.9-69.9 0-129.2-47.2-150.3-110.5H31.2v69.2c44.9 88.6 137.2 148.7 240.8 148.7z'/><path fill='%234CAF50' d='M121.7 326.4c-10.4-30.3-10.4-62.8 0-93.1V164H31.2c-36.7 71.4-36.7 156.3 0 227.6l90.5-65.2z'/><path fill='%23FBBC05' d='M272 107.7c39.5 0 75 13.6 102.9 40.4l77.1-77.1C405.6 24.1 344.6 0 272 0 168.4 0 76.1 60.1 31.2 148.7l90.5 69.2c21.1-63.3 80.4-110.5 150.3-110.5z'/></svg>");
+} */
+.google-logo{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .facebook-icon {

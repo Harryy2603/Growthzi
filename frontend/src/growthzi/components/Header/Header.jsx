@@ -5,7 +5,6 @@ import CountUp from "../CountUp/CountUp";
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {
-
   const navigate = useNavigate();
 
   return (
@@ -33,7 +32,7 @@ const Header = () => {
           </span>
         </div>
 
-        <div className="header-title" >
+        <div className="header-title">
           <h1>
             <Typewriter
               onInit={(typewriter) => {
@@ -70,9 +69,69 @@ const Header = () => {
             </div>
             <div className="form-field">
               <label htmlFor="businessType">Type of Business*</label>
-              <input type="text" id="businessType" required />
+              <select id="businessType" required>
+                <option value="">Select Business Type </option>
+                <option value="Cafe">Cafe</option>
+                <option value="Salons, Spas & Barbershops">
+                  Salons, Spas & Barbershops
+                </option>
+                <option value="Gyms & Fitness Studios">
+                  Gyms & Fitness Studios
+                </option>
+                <option value="Hotels, Homestays & Resorts">
+                  Hotels, Homestays & Resorts
+                </option>
+                <option value="Repair Services">Repair Services</option>
+                <option value="Doctors & Clinics">Doctors & Clinics</option>
+                <option value="Lawyers & Law Firms">Lawyers & Law Firms</option>
+                <option value="Chartered Accountants">
+                  Chartered Accountants
+                </option>
+                <option value="Real Estate Agents">Real Estate Agents</option>
+                <option value="Consultants">
+                  Consultants (business, finance, career)
+                </option>
+                <option value="Photographers">Photographers</option>
+                <option value="Designers">
+                  Designers (UX/UI, graphic, interior)
+                </option>
+                <option value="Writers, Bloggers">Writers, Bloggers</option>
+                <option value="Musicians, Artists, Performers">
+                  Musicians, Artists, Performers
+                </option>
+                <option value="Clothing & Apparel Stores">
+                  Clothing & Apparel Stores
+                </option>
+                <option value="Jewelry & Handicrafts">
+                  Jewelry & Handicrafts
+                </option>
+                <option value="Home Decor & Furniture Shops">
+                  Home Decor & Furniture Shops
+                </option>
+                <option value="Grocery Stores">Grocery Stores</option>
+                <option value="Pet Supplies">Pet Supplies</option>
+                <option value="Schools & Coaching Institutes">
+                  Schools & Coaching Institutes
+                </option>
+                <option value="Online Tutors">Online Tutors</option>
+                <option value="Religious Organizations">
+                  Religious Organizations
+                </option>
+                <option value="Event Planners & Wedding Services">
+                  Event Planners & Wedding Services
+                </option>
+                <option value="Travel Agencies">Travel Agencies</option>
+                <option value="Astrologers & Tarot Readers">
+                  Astrologers & Tarot Readers
+                </option>
+                <option value="Influencers">Influencers</option>
+              </select>
             </div>
-            <button onClick={()=> navigate("/generateWebsite")} className="generate-btn" type="submit">
+            <button
+              onClick={() => navigate("/generateWebsite")}
+              className="generate-btn"
+              type="submit"
+            >
               <span className="icon">✨</span> Generate
             </button>
           </form>

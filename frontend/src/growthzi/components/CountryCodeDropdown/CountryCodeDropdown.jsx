@@ -15,7 +15,7 @@ const CountryCodeDropdown = ({ countryCodes, selected, onSelect }) => {
     <div className="dropdown">
       <div className="dropdown-selected" onClick={() => setOpen(!open)}>
         <img
-          src={`https://flagcdn.com/w40/${selectedCountry?.iso || 'us'}.png`}
+          src={`https://flagcdn.com/w40/${selectedCountry?.iso || 'in'}.png`}
           alt="flag"
           className="flag-icon"
         />

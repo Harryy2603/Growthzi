@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { assets } from '../../../assets/global/assets';
+import { assets } from "../../../assets/global/assets";
 import CountryCodeDropdown from "../CountryCodeDropdown/CountryCodeDropdown";
 import "./SignupPopUp.css";
 
 const countryCodes = [
-  { code: "+1", name: "United States", iso: "us" },
   { code: "+91", name: "India", iso: "in" },
+  { code: "+1", name: "United States", iso: "us" },
   { code: "+44", name: "United Kingdom", iso: "gb" },
   { code: "+1", name: "Canada", iso: "ca" },
   { code: "+61", name: "Australia", iso: "au" },
@@ -31,7 +31,7 @@ const SignupPopUp = ({ setShowSignup, setShowLogin }) => {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [countryCode, setCountryCode] = useState("+1");
+  const [countryCode, setCountryCode] = useState("+91");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -77,9 +77,16 @@ const SignupPopUp = ({ setShowSignup, setShowLogin }) => {
 
         <div className="social-login">
           <button className="social-btn google">
-            <span className="social-icon google-icon"></span>
+            <span className="social-icon">
+              <img
+                src={assets.google_icon}
+                alt="Google logo"
+                className="google-logo"
+              />
+            </span>
             Continue with Google
           </button>
+
           <button className="social-btn facebook">
             <span className="social-icon facebook-icon"></span>
             Continue with Facebook

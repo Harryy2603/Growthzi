@@ -15,8 +15,7 @@ const AppContent = ({ showLogin, setShowLogin, showSignup, setShowSignup, isPopu
     <>
       <ScrollTop />
       <div className={`app ${isPopupActive ? 'blur-background' : ''}`}>
-        {/* Show Navbar only if not on /generateWebsite */}
-        {location.pathname !== '/generateWebsite' && (
+        {location.pathname === '/' && (
           <Navbar setShowLogin={setShowLogin} setShowSignup={setShowSignup} />
         )}
         <Routes>
