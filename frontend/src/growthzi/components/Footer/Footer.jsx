@@ -3,7 +3,8 @@ import './Footer.css';
 import { FaInstagram, FaFacebookF, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa6';
 import { IoPaperPlaneOutline } from 'react-icons/io5';
-import { assets } from '../../assets/assets';
+import { assets } from '../../../assets/global/assets';
+
 
 const Footer = () => {
   return (

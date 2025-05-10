@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Reviews.css";
 import { FaStar } from "react-icons/fa";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import { assets } from "../../assets/assets";
+import { assets } from '../../../assets/global/assets';
 
 const reviews = [
   {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./GenerateWebsite.css";
-import { assets } from "../../assets/assets";
+import { assets } from '../../../assets/global/assets';
 
 const quotes = [
   "Patience is the companion of wisdom.",

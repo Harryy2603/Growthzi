@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import Navbar from './components/Navbar/Navbar';
-import Home from './pages/Home/Home';
-import ScrollTop from './components/ScrollTop/ScrollTop';
-import SignupPopUp from './components/SignupPopUp/SignupPopUp';
-import LoginPopUp from './components/LoginPopUp/LoginPopUp';
-import GenerateWebsite from './pages/GenerateWebsite/GenerateWebsite';
+import Navbar from './growthzi/components/Navbar/Navbar'
+import Home from './growthzi/pages/Home/Home';
+import ScrollTop from './growthzi/components/ScrollTop/ScrollTop';
+import SignupPopUp from './growthzi/components/SignupPopUp/SignupPopUp';
+import LoginPopUp from './growthzi/components/LoginPopUp/LoginPopUp';
+import GenerateWebsite from './growthzi/pages/GenerateWebsite/GenerateWebsite';
 import './App.css';
 
 const AppContent = ({ showLogin, setShowLogin, showSignup, setShowSignup, isPopupActive }) => {

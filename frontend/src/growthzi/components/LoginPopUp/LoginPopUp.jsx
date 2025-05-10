@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './LoginPopUp.css';
-import { assets } from '../../assets/assets';
+import { assets } from '../../../assets/global/assets';
 
 const LoginPopUp = ({setShowLogin,setShowSignup}) => {
   const [email, setEmail] = useState('');

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './Solutions.css';
 import { motion, useAnimation } from "framer-motion";
-import { assets } from '../../assets/assets';
+import { assets } from '../../../assets/global/assets';
 
 const cardData = [
   {

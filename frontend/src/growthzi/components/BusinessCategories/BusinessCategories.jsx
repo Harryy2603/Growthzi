@@ -1,7 +1,7 @@
 import React from 'react';
 import './BusinessCategories.css';
 import { motion } from 'framer-motion';
-import { assets } from '../../assets/assets';
+import { assets } from '../../../assets/global/assets';
 
 const categories = [
   {
