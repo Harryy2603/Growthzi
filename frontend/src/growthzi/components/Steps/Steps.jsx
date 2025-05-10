@@ -1,7 +1,7 @@
 import React from "react";
 import "./Steps.css";
 import { motion } from "framer-motion";
-import { assets } from "../../assets/assets";
+import { assets } from '../../../assets/global/assets';
 
 const imageVariants = {
   hidden: { opacity: 0, x: -60 },
